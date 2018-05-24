@@ -30,5 +30,15 @@ What do you think?
 3. ???
 4. Data is inserted into database
 
-** Scraper API
+** Scraper How To
+
+1. Create a virtual env for python3
+   - For example, `python3 -m venv .`
+2. Install dependencies
+   - `pip install -r requirements.txt`
+   - Note: you may need to install the python3-devel package in order for `ujson` to compile.
+3. Edit `main.py` fieldsMap to suit your needs.
+4. Run `main.py <term> <year> <campus>`
+5. Done!
+
 
