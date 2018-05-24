@@ -26,8 +26,12 @@ def scrape(year,
            campus,
            output_filename='output.json',
            fieldsMap=None):
+
     if campus not in ('NK', 'NB', 'CM'):
-        raise ValueError('Invalid campus, must be one of NK, NB, or CM')
+        raise ValueError('Invalid campus: must be one of NK, NB, or CM')
+
+    if term not in (0, 1, 7, 9):
+        raise ValueError('Invalid year: must be one of 0, 1, 7, or 9')
 
     print('Downloading courses')
 
