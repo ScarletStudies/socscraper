@@ -1,0 +1,34 @@
+* Rutgers Schedule of Classes API
+
+** Example
+
+http://sis.rutgers.edu/soc/api/courses.gzip?year=2018&term=9&campus=NK
+
+for year 2018, fall term, Newark campus
+
+** Campus Codes
+
+- NB :: New Brunswick
+- NK :: Newark
+- CM :: Camden
+
+** Terms
+
+- 0 :: Winter
+- 1 :: Spring
+- 7 :: Summer
+- 9 :: Fall
+
+** Years
+
+What do you think?
+
+** Scraper Strategy
+
+1. Provide year, campus code, term and fields array.
+2. Scraper downloads and reduces each course to the expected fields.
+3. ???
+4. Data is inserted into database
+
+** Scraper API
+
